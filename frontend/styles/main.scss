@@ -1,14 +1,99 @@
 body {
-  background-color: #fff;
+  background-color: #f5f5f5;
   font-family: "Inter", sans-serif;
+  // Primary Color :  #5e95ff
 }
+
+/* Variable Define */
+:root {
+  --primary-color: #5e95ff;
+}
+
+// .container {
+//   min-width: 80px;
+// }
 
 .navbar-light {
   .navbar-nav {
+    .nav-item {
+      margin: 0 35px 0 35px;
+    }
     .nav-link {
       &:hover {
-        font-weight: bold;
-        color: #071c4d !important;
+        font-weight: 500;
+        color: var(--primary-color) !important;
+      }
+    }
+  }
+}
+
+.navbar-light {
+  .text-end {
+    .btn-login {
+      font-weight: bold;
+      color: var(--primary-color);
+      border-color: transparent;
+    }
+
+    .btn-join {
+      font-weight: bold;
+      color: var(--primary-color);
+      border-color: var(--primary-color);
+
+      &:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.sort-filter {
+  margin-top: 20px;
+
+  .pilihan {
+    .navbar {
+      width: 150px;
+    }
+    .btn-sort {
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }
+
+    .dropdown-menu {
+      margin-top: 10px;
+    }
+
+    .btn-filter {
+      max-height: 40px;
+      margin-top: 3px;
+      margin-left: 30px;
+
+      .btn-filter {
+        &:hover {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+.patvice-shop {
+  .card {
+    border: none;
+    .header img {
+      max-width: 230px;
+      margin: 15px 15px 0 15px;
+    }
+
+    .card-body {
+      padding: 15px;
+      img {
+        max-width: 50px;
+      }
+
+      .id {
+        justify-content: center;
       }
     }
   }

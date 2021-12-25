@@ -1,10 +1,86 @@
 body {
-  background-color: #fff;
+  background-color: #f5f5f5;
   font-family: "Inter", sans-serif;
 }
 
+/* Variable Define */
+:root {
+  --primary-color: #5e95ff;
+}
+
+.navbar-light .navbar-nav .nav-item {
+  margin: 0 35px 0 35px;
+}
+
 .navbar-light .navbar-nav .nav-link:hover {
+  font-weight: 500;
+  color: var(--primary-color) !important;
+}
+
+.navbar-light .text-end .btn-login {
   font-weight: bold;
-  color: #071c4d !important;
+  color: var(--primary-color);
+  border-color: transparent;
+}
+
+.navbar-light .text-end .btn-join {
+  font-weight: bold;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.navbar-light .text-end .btn-join:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.sort-filter {
+  margin-top: 20px;
+}
+
+.sort-filter .pilihan .navbar {
+  width: 150px;
+}
+
+.sort-filter .pilihan .btn-sort {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.sort-filter .pilihan .dropdown-menu {
+  margin-top: 10px;
+}
+
+.sort-filter .pilihan .btn-filter {
+  max-height: 40px;
+  margin-top: 3px;
+  margin-left: 30px;
+}
+
+.sort-filter .pilihan .btn-filter .btn-filter:hover {
+  font-weight: 500;
+}
+
+.patvice-shop .card {
+  border: none;
+}
+
+.patvice-shop .card .header img {
+  max-width: 230px;
+  margin: 15px 15px 0 15px;
+}
+
+.patvice-shop .card .card-body {
+  padding: 15px;
+}
+
+.patvice-shop .card .card-body img {
+  max-width: 50px;
+}
+
+.patvice-shop .card .card-body .id {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

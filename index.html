@@ -1,75 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patvice - Kenali Jasamu</title>
-    <link rel="icon" href="/frontend/images/patvice.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="/frontend/libraries/bootstrap/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="/frontend/styles/main.css" />
-  </head>
 
-  <body>
-    <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a href="#" class="navbar-brand">
-          <img src="/frontend/images/logo.png" alt="logo" width="80" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patvice - Kenali Jasamu</title>
+  <link rel="icon" href="/frontend/images/patvice.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/frontend/libraries/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="/frontend/styles/main.css" />
+</head>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Chat</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">List</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Order</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Notification</a
-              >
-            </li>
-            <form class="d-flex">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Yuk, Temukan jasamu"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </ul>
+<body>
+  <!-- Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75 border-bottom">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img src="/frontend/images/logo.png" alt="logo" width="80" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Chat</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Notification</a>
+          </li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" />
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-login me-2">Masuk</button>
+          <button type="button" class="btn btn-join">Daftar</button>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
-    <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
-    <script src="/frontend/libraries/retina/retina.min.js"></script>
-  </body>
+  <section class="sort-filter" id="sort">
+    <div class="pilihan">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar col-2">
+            <div class="dropdown col">
+              <button class="btn btn-sort dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Terpopuler
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Terbaru</a></li>
+                <li><a class="dropdown-item" href="#">Diikuti</a></li>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="btn-filter col-10">
+            <div class="d-flex justify-content-around ">
+              <button type="button" class="btn btn-filter mx-2">All</button>
+              <button type="button" class="btn btn-filter mx-2">Logo Design</button>
+              <button type="button" class="btn btn-filter mx-2">Web</button>
+              <button type="button" class="btn btn-filter mx-2">Video Editing</button>
+              <button type="button" class="btn btn-filter mx-2">Branding</button>
+              <button type="button" class="btn btn-filter mx-2">Poster</button>
+              <button type="button" class="btn btn-filter mx-2">Product</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carding -->
+  <section class="patvice-shop">
+    <div class="container-md">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="header">
+              <img src="/frontend/images/thumbnail.png" alt="web">
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-3">
+                  <img src="/frontend/images/mini-profile.png" alt="web">
+                </div>
+                <div class="id col-6">
+                  habibi1701
+                </div>
+                <div class="col-1">
+                  <img src="/frontend/images/favorite.png" alt="">
+                </div>
+              </div>
+
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional
+                content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="/frontend/libraries/bootstrap/js/bootstrap.js"></script>
+  <script src="/frontend/libraries/jquery/jquery-3.6.0.min.js"></script>
+  <script src="/frontend/libraries/retina/retina.min.js"></script>
+</body>
+
 </html>
